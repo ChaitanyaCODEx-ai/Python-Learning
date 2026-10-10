@@ -30,3 +30,8 @@ def funct(a,b,c,d):
 result = funct(5,10,c=15,d=20)
 print(result)
 
+def kids(*kid):
+    print("The youngest child is "+kid[2])
+
+kids("Ace","Sabo","Luffy")
+
