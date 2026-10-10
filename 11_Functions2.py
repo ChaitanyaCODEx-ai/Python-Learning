@@ -35,3 +35,10 @@ def kids(*kid):
 
 kids("Ace","Sabo","Luffy")
 
+def my_function(*args):      #---------------> This type of Arguments are tuple data types
+  print("Type:", type(args))
+  print("First argument:", args[0])
+  print("Second argument:", args[1])
+  print("All arguments:", args)
+
+my_function("Emil", "Tobias", "Linus")
