@@ -1,0 +1,12 @@
+if statements cannot be empty, but if you for some reason have an if statement
+with no content, put in the pass statement to avoid getting an error
+a = 33
+b = 200
+
+if b > a:
+  pass
+
+for x in range(6)
+print(x) -------------------> it prints the numbers from 0 to 5
+
+for loops can't be left empty so we can leave it empty using pass syntax

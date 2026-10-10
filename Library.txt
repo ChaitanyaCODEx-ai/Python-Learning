@@ -1,0 +1,33 @@
+Library
+We Can Import Libabry to the Code by commond --> import ........
+
+Built in python Standard Library
+math     : Mathematical operations
+os       : Interact with the operating system
+datetime : Date and time operations
+random   : Generate random numbers
+json     : Handles JSON data encoding and decoding.
+
+External Python Library
+---> External (third-party) libraries are not included with Python by default.
+     You can install them easily using the pip package manage
+NumPy:        A library for numerical computing that provides support for arrays,
+              matrices, and mathematical operations.
+Pandas:       A library for data analysis and manipulation using powerful data
+              structures like DataFrame and Series.
+Matplotlib:   It is a data visualization library that helps you create a wide 
+              variety of static, animated and interactive plots. It supports charts such as bar graphs, line charts, histograms and scatter plots.
+SciPy:        A library for advanced scientific and mathematical computations 
+              built on top of NumPy.
+TensorFlow:   It is an open-source machine learning and deep learning framework
+              developed by Google. It allows developers to build and train neural networks for tasks such as image recognition, natural language processing and predictive modeling.
+Scikit-learn: It is a popular machine learning library built on top of NumPy and
+              SciPy. It offers simple and efficient tools for classification, regression, clustering and dimensionality reduction.
+Scrapy:       A library for web scraping and extracting structured data from web
+              sites.
+PyTorch:      A deep learning framework with GPU support for building and training
+             neural networks.
+PyGame:       It is a cross-platform library used for developing 2D games and 
+              multimedia applications. It provides modules for handling graphics, sound and user input with ease.
+Keras:        A high-level deep learning library that provides an easy interface
+             for building neural networks.

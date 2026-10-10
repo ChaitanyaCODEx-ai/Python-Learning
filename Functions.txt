@@ -1,0 +1,12 @@
+Why do we define Functions in Python?
+We define functions in Python to write code once and reuse it anywhere in a program, 
+making scripts cleaner, easier to debug, and less prone to errors.
+Without functions, you would have to copy and paste the same logic repeatedly—and 
+if you needed to fix a bug, you would have to update it in every single place.
+
+WHAT ARE ARGUMENTS?
+Arguments are specified after the function name, inside the parentheses. 
+You can add as many arguments as you want, just separate them with a comma.
+
+A parameter is the variable listed inside the parentheses in the function definition.
+An argument is the actual value that is sent to the function when it is called.

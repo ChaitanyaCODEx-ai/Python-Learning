@@ -1,0 +1,46 @@
+How to Create a frozenset
+Pass any iterable (list, tuple, standard set, string) into frozenset():
+
+Python
+# From a list
+numbers = frozenset([1, 2, 3, 3, 4])
+print(numbers)  # Output: frozenset({1, 2, 3, 4})
+
+# From a string
+letters = frozenset("hello")
+print(letters)  # Output: frozenset({'h', 'e', 'l', 'o'})
+Why Use frozenset?
+1. Use Sets as Dictionary Keys
+Standard sets cannot be dictionary keys because they are mutable. frozenset is hashable, making it valid as a key:
+
+Python
+# Mapping group permissions to access levels
+permissions = {
+    frozenset(["read", "write"]): "Editor",
+    frozenset(["read"]): "Viewer"
+}
+
+user_roles = frozenset(["read", "write"])
+print(permissions[user_roles])  # Output: Editor
+2. Create Sets of Sets (Nested Sets)
+A set cannot contain another set, but it can contain a frozenset:
+
+Python
+# Valid: set containing frozensets
+nested_set = {frozenset([1, 2]), frozenset([3, 4])}
+3. Data Protection
+Guarantees that a set of constant values (like status codes or configuration settings) cannot be modified accidentally elsewhere in your code.
+
+Supported Operations
+Since frozenset is immutable, methods like .add(), .remove(), .pop(), or .clear() will throw an AttributeError.
+
+However, all standard set math/comparison operations work as expected:
+
+Python
+a = frozenset([1, 2, 3])
+b = frozenset([3, 4, 5])
+
+print(a | b)  # Union: frozenset({1, 2, 3, 4, 5})
+print(a & b)  # Intersection: frozenset({3})
+print(a - b)  # Difference: frozenset({1, 2})
+print(2 in a) # Membership test: True
