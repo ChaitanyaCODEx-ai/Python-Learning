@@ -42,3 +42,21 @@ def my_function(*args):      #---------------> This type of Arguments are tuple 
   print("All arguments:", args)
 
 my_function("Emil", "Tobias", "Linus")
+
+#We can also use *args with regular parameters
+def my_function(greeting, *names):
+  for name in names:
+    print(greeting, name)
+    print(greeting,names[1])
+
+my_function("Hello", "Emil", "Tobias", "Linus")
+
+def my_function(*numbers):
+   total = 0
+   for num in numbers:
+      total += num
+      return total
+   
+print(my_function(1,2,3))
+print(my_function(10,20,30,40,50))
+print(my_function(5))
