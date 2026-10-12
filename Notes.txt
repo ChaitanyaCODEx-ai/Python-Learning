@@ -10,3 +10,4 @@ for x in range(6)
 print(x) -------------------> it prints the numbers from 0 to 5
 
 for loops can't be left empty so we can leave it empty using pass syntax
+

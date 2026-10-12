@@ -18,3 +18,15 @@ def my_function(*kids):
 my_function("Emil", "Tobias", "Linus")
 
 *args is useful when you want to create flexible functions:
+
+Using **kwargs to accept any number of keyword arguments
+
+The LEGB Rule
+Python follows the LEGB rule when looking up variable names, and searches for them in this order:
+
+Local - Inside the current function
+Enclosing - Inside enclosing functions (from inner to outer)
+Global - At the top level of the module
+Built-in - In Python's built-in namespace
+
+A decorator is a function that takes another function as input and returns a new function.

@@ -1,0 +1,6 @@
+Laptop,Electronics,2,45000
+Notebook,Stationery,15,50
+Mouse,Electronics,8,800
+Pen,Stationery,40,20
+Headphones,Electronics,5,1500
+Desk Mat,Stationery,10,350

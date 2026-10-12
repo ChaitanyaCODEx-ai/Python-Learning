@@ -60,3 +60,24 @@ def my_function(*numbers):
 print(my_function(1,2,3))
 print(my_function(10,20,30,40,50))
 print(my_function(5))
+
+#DECORATOR --> A decorator is a function that takes another function as input and reutrns a new function
+def changecase(func):
+  def myinner():
+    return func().upper()
+  return myinner
+
+@changecase
+def myfunction():
+  return "Hello Sally"
+
+@changecase
+def otherfunction():
+  return "I am speed!"
+
+print(myfunction())
+print(otherfunction())
+#---------------------------------------------------
+def maths(arithmetic):
+   def myinner():
+      return arithmetic
