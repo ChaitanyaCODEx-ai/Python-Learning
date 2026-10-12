@@ -81,3 +81,15 @@ print(otherfunction())
 def maths(arithmetic):
    def myinner():
       return arithmetic
+
+x = "global"
+def outer():
+   x = "Enclosing"
+   def inner():
+      x  = "Local"
+      print("Inner:",x)
+      inner()
+      print("outer:",x)
+outer()
+print("Global",x)
+      
